@@ -1,8 +1,8 @@
-if(NOT EXISTS "/home/hubby/Dev/plasmoid/easy-rss-plasma6/build/install_manifest.txt")
-    message(FATAL_ERROR "Cannot find install manifest: /home/hubby/Dev/plasmoid/easy-rss-plasma6/build/install_manifest.txt")
+if(NOT EXISTS "/home/george/Dev/easy-rss/build/install_manifest.txt")
+    message(FATAL_ERROR "Cannot find install manifest: /home/george/Dev/easy-rss/build/install_manifest.txt")
 endif()
 
-file(READ "/home/hubby/Dev/plasmoid/easy-rss-plasma6/build/install_manifest.txt" files)
+file(READ "/home/george/Dev/easy-rss/build/install_manifest.txt" files)
 string(REGEX REPLACE "\n" ";" files "${files}")
 foreach(file ${files})
     message(STATUS "Uninstalling $ENV{DESTDIR}${file}")

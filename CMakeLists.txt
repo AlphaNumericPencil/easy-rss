@@ -1,11 +1,11 @@
-cmake_minimum_required(VERSION 3.29.2)
+cmake_minimum_required(VERSION 3.27.7)
 
-project(plasma-%{APPNAMELC})
+project(plasma-easyrss)
 
 set(QT_MIN_VERSION "6.4.0")
-# set(KF6_MIN_VERSION "6.1.0")
+set(KF6_MIN_VERSION "6.0.0")
 
-# find_package(ECM ${KF6_MIN_VERSION} REQUIRED NO_MODULE)
+find_package(ECM ${KF6_MIN_VERSION} REQUIRED NO_MODULE)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH})
 
 include(KDEInstallDirs)
@@ -18,12 +18,14 @@ include(FeatureSummary)
 # ) # Plasma 6 Beta 1.
 
 
-# find_package(KF6 ${KF6_MIN_VERSION} REQUIRED COMPONENTS
-    # Plasma
-    # I18n
-# )
+find_package(KF6 ${KF6_MIN_VERSION} REQUIRED COMPONENTS)
 
-find_package(Qt6 ${QT_MIN_VERSION} CONFIG REQUIRED COMPONENTS
+find_package(KF6 REQUIRED COMPONENTS
+	#    Plasma
+    #    I18n
+)
+
+find_package(Qt6 CONFIG REQUIRED COMPONENTS
     Quick
     Core
 )
