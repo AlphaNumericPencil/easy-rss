@@ -1,0 +1,21 @@
+{
+        "KPackageStructure": "Plasma/Applet",
+        "KPlugin": {
+            "Authors": [
+                {
+                    "Email": "Rohn2024@gmail.com",
+                    "Name": "George Rohn"
+                }
+            ],
+            "Name": "Easy RSS",
+            "Category": "",
+            "Description": "A robust feed reader which will provide local storage and feed management.",
+            "Icon": "preferences-web-feed-reader",
+            "Id": "easy-rss-reader",
+            "License": "GPL",
+            "Version": 2,
+            "Website": "https://github.com/AlphaNumericPencil/EasyRSS"
+        },
+    "X-Plasma-API-Minimum-Version": "6.0",
+    "X-Plasma-API-NotificationAreaCategory": "Application Status",
+}

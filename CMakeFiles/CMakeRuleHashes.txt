@@ -1,0 +1,6 @@
+# Hashes of file build rules.
+92e20e02aa25c6e7d780d2659b55a85a CMakeFiles/fetch-translations
+ee5f48c6001796a248e4d1a8b08ad0db CMakeFiles/rssreader_autogen
+131e3f2ae633b679ec78e329626b6697 CMakeFiles/uninstall
+0dc6551f62b4e2e5754294684af5401f releaseme
+66505b286dd219fabc0d8965d8a05c94 rssreader_autogen/timestamp
